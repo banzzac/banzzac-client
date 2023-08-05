@@ -28,6 +28,7 @@ function App() {
 
 
         <button type='button'>나는 버튼입니다</button>
+        <button type='button'>나는 두번째 버튼입니다</button>
 
         <a href='https://react.de
         
