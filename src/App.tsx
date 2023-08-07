@@ -2,7 +2,6 @@ import './App.css';
 
 import  { useState } from 'react';
 
-import viteLogo from '../../../../../../vite.svg';
 import reactLogo from './assets/react.svg';
 
 function App() {
@@ -21,11 +20,6 @@ function App() {
 
 
       <div>
-
-        <a href="https://vitejs.dev" target="_blank" rel="noreferrer">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-
 
         <button type='button'>나는 버튼입니다</button>
         <button type='button'>나는 두번째 버튼입니다</button>
