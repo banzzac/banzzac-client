@@ -1,40 +1,34 @@
 import './App.css';
 
-import  { useState } from 'react';
+import { useState } from 'react';
 
 import reactLogo from './assets/react.svg';
 
 function App() {
   const [count, setCount] = useState(0);
 
+  const countUp = () => {
+    setCount(prev=> prev + 1);
+  }
+
   return (
     <>
-
-
-
       asdf
-
-
-
-
-
-
       <div>
-
-        <button type='button'>나는 버튼입니다</button>
-        <button type='button'>나는 두번째 버튼입니다</button>
-
-        <a href='https://react.de
-        
-        v' target="_blank" rel="noreferrer">
+        <button type="button" 
+        >나는 버튼입니다</button>
+        <button type="button">나는 두번째 버튼입니다</button>
+        <a
+          href="https://react.dev"
+          target="_blank"
+          rel="noreferrer"
+        >
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
       <h1>Vite + React</h1>
       <div className="card">
-        <button onClick={() => setCount((_count) => _count + 1)}
-
-        >
+        <button onClick={countUp} type="button">
           count is
           {' '}
           {count}
