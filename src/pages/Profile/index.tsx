@@ -1,11 +1,10 @@
-import AddPetButton from "./AddPetButton.tsx"
+import AddPetButton from "./AddPetButton";
 
-function ProfilePage() {
-    return (
-        <div>
-            <AddPetButton />
-        </div>
-    )
-}
+const ProfilePage = () => (
+  <div>
+    asdf a
+    <AddPetButton />
+  </div>
+);
 
-export default ProfilePage
+export default ProfilePage;

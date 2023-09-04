@@ -1,11 +1,7 @@
-import ProfilePage from './pages/Profile/index.tsx';
+import ProfilePage from "./pages/Profile";
 
 function App() {
-
-
-  return (
-    <ProfilePage/>
-  );
+  return <ProfilePage />;
 }
 
 export default App;
