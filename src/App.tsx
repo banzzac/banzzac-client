@@ -1,7 +1,11 @@
-import ProfilePage from "./pages/Profile";
+import { Navigator } from "./routes/Navigator";
 
 function App() {
-  return <ProfilePage />;
+  return (
+    <div>
+      <Navigator />
+    </div>
+  );
 }
 
 export default App;

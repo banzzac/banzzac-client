@@ -1,10 +1,1 @@
-import AddPetButton from "./AddPetButton";
-
-const ProfilePage = () => (
-  <div>
-    asdf a
-    <AddPetButton />
-  </div>
-);
-
-export default ProfilePage;
+export const Profile = () => <div>Profile Page</div>;
