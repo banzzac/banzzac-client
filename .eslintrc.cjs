@@ -25,6 +25,7 @@ module.exports = {
         trailingComma: "all",
         printWidth: 80,
         arrowParens: "always",
+        endOfLine : "auto",
       },
       {
         usePrettierrc: false,
