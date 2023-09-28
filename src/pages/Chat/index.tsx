@@ -4,25 +4,94 @@ import styled from "@emotion/styled";
 import masterImg from "../../img/profile/person.png";
 import petImg from "../../img/profile/pet.png";
 
-const ChatTitle = styled.h2``;
-const ChatSearchInput = styled.input``;
+const ChatTitle = styled.h2`
+  padding: 19px 0px 25px 28px;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+`;
+const InputDiv = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 18.25px;
+`;
+const ChatSearchInput = styled.input`
+  width: 85%;
+  border-radius: 4px;
+  border: 1px solid #efefef;
+  padding: 11px 14px;
+  background: #fff;
+`;
 const ChatRooms = styled.div``;
-
-const ChatRoom = styled.div``;
-
-// 저 밑에 chat__room__col 로 선언된 애들도 styled 형식으로 먼저 바꿔볼게요
-const MasterImg = styled.img``;
-const PetImg = styled.img``;
-const Column = styled.div``;
-const RoomTitle = styled.h4``;
-const RoomDescription = styled.p``;
-const Ellipse22 = styled.div``;
+const ChatRoom = styled.div`
+  display: flex;
+  align-item: center;
+  padding: 13px 0px 13px 0px;
+`;
+const Column = styled.div`
+  &:first-child {
+    width: 30%;
+    position: relative;
+  }
+  &:nth-child(2) {
+    width: 100%;
+  }
+  &:last-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+  }
+`;
+const MasterImg = styled.img`
+  position: absolute;
+  left: 20px;
+  top: -8px;
+  z-index: 1;
+`;
+const PetImg = styled.img`
+  position: absolute;
+  left: 40px;
+  bottom: -8px;
+`;
+const RoomTitle = styled.h4`
+  font-size: 14px;
+  padding-bottom: 2px;
+`;
+const RoomDescription = styled.p`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 280px;
+  height: 18px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 12px;
+  font-weight: 400;
+  color: #777;
+  line-height: 18px;
+`;
+const Ellipse22 = styled.div`
+  width: 22px;
+  height: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 11px;
+  background-color: #bc92ff;
+  color: #fff;
+`;
 
 export const Chat = () => {
   return (
     <>
       <ChatTitle>채팅</ChatTitle>
-      <ChatSearchInput />
+      <InputDiv>
+        <ChatSearchInput placeholder="검색" />
+      </InputDiv>
       <ChatRooms>
         <ChatRoom>
           <Column>
