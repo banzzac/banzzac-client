@@ -10,8 +10,8 @@ export default function ErrorPage() {
 
   return (
     <div id="error-page">
-      <h1>Oops!</h1>
-      <p>Sorry, an unexpected error has occurred.</p>
+      <h1>이런!</h1>
+      <p>정상적인 경로가 아닌걸요? 꼬우면 돌아가세요~</p>
       <p>
         <i>{(error as any).statusText || (error as any).message}</i>
       </p>
