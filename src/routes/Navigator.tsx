@@ -17,7 +17,7 @@ const Nav = styled.nav`
   justify-content: space-between;
   align-item: center;
   bottom: 15px;
-  left: 17%;
+  left: 7%;
 
   padding: 13px 48px;
   box-sizing: border-box;
