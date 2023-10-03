@@ -9,7 +9,6 @@ import Splash from './pages/Splash.tsx';
 function App() {
   return (
     <div>
-      <Global styles={reset} />
       <Navigator />
     </div>
     <Splash/>
