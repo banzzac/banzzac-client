@@ -12,6 +12,7 @@ import App from "./App";
 import { Chat, Feed, Friends, Profile, Search } from "./pages";
 import ErrorPage from "./pages/ErrorPage";
 import Page404 from "./pages/Page404";
+import Splash from "./pages/Splash";
 import reset from "./reset";
 
 // 오오오오오 live share 좋은듯
@@ -28,6 +29,7 @@ const router = createBrowserRouter(
       </Route>
       <Route path="/login" element={<div>login</div>} />
       <Route path="/*" element={<Page404 />} />
+      <Route path="/splash" element={<Splash />} />
     </Route>,
   ),
 );
