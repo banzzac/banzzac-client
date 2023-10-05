@@ -9,7 +9,6 @@ interface Props {
 }
 export const Button = ({ onClick }: Props) => {
   const handleClick = () => {
-    console.log("버튼이 클릭되었습니다");
     onClick();
   };
 

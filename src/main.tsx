@@ -11,8 +11,6 @@ import App from "./App";
 import { Chat, Feed, Friends, Profile, Search } from "./pages";
 import ErrorPage from "./pages/ErrorPage";
 
-// 오오오오오 live share 좋은듯
-
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route>

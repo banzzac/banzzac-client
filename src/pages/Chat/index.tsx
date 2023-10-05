@@ -1,6 +1,5 @@
 import styled from "@emotion/styled";
 
-// ㅇㅋ 한번 해봅시당, 그전에 저희 emotion/styled 사용할꺼라서 import바꿀게여, 사용 방식은 사실상 같은데, 다른 라이브러리 입니다!
 import masterImg from "../../img/profile/person.png";
 import petImg from "../../img/profile/pet.png";
 
