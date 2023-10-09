@@ -15,9 +15,9 @@ const Nav = styled.nav`
   z-index: 5;
   display: flex;
   justify-content: space-between;
-  align-item: center;
+  align-items: center;
   bottom: 15px;
-  left: 17%;
+  left: 7%;
 
   padding: 13px 48px;
   box-sizing: border-box;

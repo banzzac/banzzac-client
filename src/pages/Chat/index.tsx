@@ -27,7 +27,7 @@ const ChatSearchInput = styled.input`
 const ChatRooms = styled.div``;
 const ChatRoom = styled.div`
   display: flex;
-  align-item: center;
+  align-items: center;
   padding: 13px 0px 13px 0px;
 `;
 const Column = styled.div`
