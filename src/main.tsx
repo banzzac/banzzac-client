@@ -10,6 +10,7 @@ import {
 
 import App from "./App";
 import { Chat, Feed, Friends, Profile, Search } from "./pages";
+import { ChatRoom } from "./pages/Chat/ChatRoom";
 import ErrorPage from "./pages/ErrorPage";
 import Page404 from "./pages/Page404";
 import Splash from "./pages/Splash";
@@ -27,6 +28,7 @@ const router = createBrowserRouter(
         <Route path="feed" element={<Feed />} />
         <Route path="search" element={<Search />} />
       </Route>
+      <Route path="/chatroom/:id" element={<ChatRoom />} />
       <Route path="/login" element={<div>login</div>} />
       <Route path="/*" element={<Page404 />} />
       <Route path="/splash" element={<Splash />} />

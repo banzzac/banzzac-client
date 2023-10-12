@@ -1,4 +1,5 @@
 import styled from "@emotion/styled";
+import { Link } from "react-router-dom";
 
 // ㅇㅋ 한번 해봅시당, 그전에 저희 emotion/styled 사용할꺼라서 import바꿀게여, 사용 방식은 사실상 같은데, 다른 라이브러리 입니다!
 import masterImg from "../../img/profile/person.png";
@@ -45,13 +46,13 @@ const Column = styled.div`
     width: 10%;
   }
 `;
-const MasterImg = styled.img`
+export const MasterImg = styled.img`
   position: absolute;
   left: 20px;
   top: -8px;
   z-index: 1;
 `;
-const PetImg = styled.img`
+export const PetImg = styled.img`
   position: absolute;
   left: 40px;
   bottom: -8px;
@@ -85,6 +86,11 @@ const Ellipse22 = styled.div`
   color: #fff;
 `;
 
+const ChatLink = styled(Link)`
+  text-decoration: none;
+  color: black;
+`;
+
 export const Chat = () => {
   return (
     <>
@@ -93,22 +99,24 @@ export const Chat = () => {
         <ChatSearchInput placeholder="검색" />
       </InputDiv>
       <ChatRooms>
-        <ChatRoom>
-          <Column>
-            <MasterImg src={masterImg} />
-            <PetImg src={petImg} />
-          </Column>
-          <Column>
-            <RoomTitle>김하늘 - 짱구</RoomTitle>
-            <RoomDescription>
-              망원동 산책로 추천해주세요 이사와서 잘 몰라요 도움주시면
-              감사하겠습니다
-            </RoomDescription>
-          </Column>
-          <Column>
-            <Ellipse22>1</Ellipse22>
-          </Column>
-        </ChatRoom>
+        <ChatLink to={`/chatroom/유저아이디`}>
+          <ChatRoom>
+            <Column>
+              <MasterImg src={masterImg} />
+              <PetImg src={petImg} />
+            </Column>
+            <Column>
+              <RoomTitle>김하늘 - 짱구</RoomTitle>
+              <RoomDescription>
+                망원동 산책로 추천해주세요 이사와서 잘 몰라요 도움주시면
+                감사하겠습니다
+              </RoomDescription>
+            </Column>
+            <Column>
+              <Ellipse22>1</Ellipse22>
+            </Column>
+          </ChatRoom>
+        </ChatLink>
       </ChatRooms>
     </>
   );

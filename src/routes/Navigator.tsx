@@ -6,7 +6,7 @@ import chatIcon from "./../img/Icons/Chat-Icon.png";
 import feedIcon from "./../img/Icons/Feed-Icon.png";
 import firendIcon from "./../img/Icons/Friend-Icon.png";
 import profileIcon from "./../img/Icons/Profile-Icon.png";
-import searchIcon from "./../img/Icons/Search-Icon.png";
+import searchIcon from "./../img/Icons/Search-Icon.jpg";
 
 // Styled Zone
 const Nav = styled.nav`
