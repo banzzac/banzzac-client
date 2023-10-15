@@ -3,11 +3,14 @@ import styled from "@emotion/styled";
 interface Props {
   frontImgSrc: string;
   backImgSrc: string;
-  borderColor: string;
+  borderColor?: string;
   className?: string;
 }
 
-const Container = styled.div``;
+const Container = styled.div`
+  position: relative;
+  width: fit-content;
+`;
 
 const Background = styled.div<{ borderColor?: string }>`
   width: fit-content;
