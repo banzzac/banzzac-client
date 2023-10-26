@@ -8,4 +8,10 @@ export default defineConfig({
       jsxImportSource: "@emotion/react",
     }),
   ],
+  resolve: {
+    alias: [
+      { find: "@components", replacement: "/src/components" },
+      { find: "@", replacement: "/src" },
+    ],
+  },
 });
