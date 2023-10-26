@@ -30,13 +30,13 @@ module.exports = {
         usePrettierrc: false,
       },
     ],
-    "@typescript-eslint/consistent-type-imports": [
-      "error",
-      {
-        prefer: "type-imports",
-        disallowTypeAnnotations: false,
-      },
-    ],
+    "@typescript-eslint/consistent-type-exports": ["error", {
+      "fixMixedExportsWithInlineTypeSpecifier": true
+    }],
+    "@typescript-eslint/consistent-type-imports": ["error", {
+      "prefer": "type-imports",
+      "fixStyle": "inline-type-imports"
+    }]
   },
   ignorePatterns: [
     "**/dist/**/*",
